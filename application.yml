@@ -1,0 +1,26 @@
+eureka:
+ client:
+  register-with-eureka: true
+  fetch-registry: false
+  service-url:
+   defaultZone :http://localhost:8761/eureka/
+instance:
+ hostname: localhost
+ 
+ 
+ hystrix:
+  command: 
+   fallbackcmd:
+    execution:
+     isolation:
+      thread:
+       timetoutInMilliseconds: 5000
+       
+      
+ microservices:
+  payment-service:
+  end-points:
+   endpoint: 
+  
+      
+    
